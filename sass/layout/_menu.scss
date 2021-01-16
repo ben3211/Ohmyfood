@@ -1,0 +1,30 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 298px;
+    background-color: #f6f6f6;
+    font-family: sans-serif;
+    padding: 0 40px;
+    .menu__title {
+        text-align: center;
+        padding-top: 42px;
+    }
+    .menu__p {
+        text-align: center;
+        padding-top: 20px;
+        color: #7d7d7d;
+    }
+    .menu__button {
+        border-radius: 30px;
+        color:white;
+        font-weight: bold;
+        margin:auto;
+        margin-top: 50px;
+        width: 220px;
+        padding: 15px 0;
+        border:none;
+        cursor: pointer;
+        box-shadow: 0px 5px 10px 3px #ccc;
+        background: linear-gradient(176deg, rgba(238,115,218,1) 0%, rgba(187,99,219,1) 46%, rgba(176,95,220,1) 77%, rgba(173,94,220,1) 100%);    
+    }
+}

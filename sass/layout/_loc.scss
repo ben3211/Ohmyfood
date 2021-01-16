@@ -1,0 +1,13 @@
+.loc {
+    @include flex-center;
+    background-color: #eaeaea;
+    color: #4b4b4b;
+    height: 50px;
+    font-size: 0.9em;
+    p {
+        margin-left: 12px;
+        font-weight: bolder;
+        padding-right: 18px;
+    }
+}
+
