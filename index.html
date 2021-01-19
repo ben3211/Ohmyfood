@@ -35,8 +35,10 @@
 
         <!--loc-->
         <div class="loc">
-            <i class="fas fa-map-marker-alt loc__icon"></i> 
-            <p>Paris, Belleville</p>
+            <a href="#">
+                <i class="fas fa-map-marker-alt loc__icon"></i> 
+                <p>Paris, Belleville</p>
+            </a>
         </div>
         <!--loc-->
 
@@ -55,18 +57,25 @@
         <!--running-->
         <section class="running">
             <h2>Fonctionnement</h2>
-            <div class="running__1">
-                <p>1</p>
-                <a href="#"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</a>
+
+            <div class="running__menu">
+                <span>1</span>
+                <i class="running__icon fas fa-mobile-alt"></i>
+                <p>Choisissez un restaurant</p>
             </div>
-            <div class="running__2">
-                <p>2</p>
-                <a href="#"><i class="fas fa-list"></i>Composez votre menu</a>
+
+            <div class="running__menu">
+                <span>2</span>
+                <i class="running__icon fas fa-list"></i>
+                <p>Composez votre menu</p>
             </div>
-            <div class="running__3--active">
-                <p>3</p>
-                <a href="#"><i class="fas fa-store"></i>Dégustez au restaurant</a>
+
+            <div class="running__menu running__menu--active">
+                <span>3</span>
+                <i class="running__icon running__icon--active fas fa-store"></i>
+                <p>Dégustez au restaurant</p>
             </div>
+
         </section>
         <!--running-->
 
@@ -75,50 +84,68 @@
             <h2>Restaurants</h2>
 
             <div class="card">
-                <a href="#">
+                <a href="la_palette_du_gout.html">
                     <img class="card__image" src="img/la_palette_du_gout.jpg" alt="la palette du gout">
                     <div class="card__info-new">
                         <span>Nouveau</span>
                     </div>
                     <div class="card__info">
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
-                        <span class="card__info-heart"><i class="far fa-heart"></i></span>
+                        <div class="card__info-title">
+                            <h3>La palette du goût</h3>
+                            <h4>Ménilmontant</h4>
+                        </div>
+                        <div class="card__info-heart">
+                            <span><i class="heart__icon far fa-heart"></i></span>
+                        </div>
                     </div>
                 </a>
             </div>
 
             <div class="card">
-                <a href="#">
+                <a href="la_note_enchantée.html">
                     <img class="card__image" src="img/la_note_enchantee.jpg" alt="la note enchantée">
-                    <div class="card__info-new">Nouveau</div>
-                    <div class="card__info">
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
+                    <div class="card__info-new">
+                        <span>Nouveau</span>
                     </div>
-                    <div class="card__info-heart"><i class="far fa-heart"></i></div>
+                    <div class="card__info">
+                        <div class="card__info-title">
+                            <h3>La note enchantée</h3>
+                            <h4>Charonne</h4>
+                        </div>
+                        <div class="card__info-heart">
+                            <span><i class="heart__icon far fa-heart"></i></span>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="card">
-                <a href="#">
+                <a href="a_la_francaise.html">
                     <img class="card__image" src="img/a_la_francaise.jpg" alt="a la francaise">
                     <div class="card__info">
-                        <h3>À la française</h3>
-                        <p>Cité Rouge</p>
+                        <div class="card__info-title">
+                            <h3>À la française</h3>
+                            <h4>Cité Rouge</h4>
+                        </div>
+                        <div class="card__info-heart">
+                            <span><i class="heart__icon far fa-heart"></i></span>
+                        </div>
                     </div>
-                    <div class="card__info-heart"><i class="far fa-heart"></i></div>
                 </a>
             </div>
 
             <div class="card">
-                <a href="#">
+                <a href="le_delice_des_sens.html">
                     <img class="card__image" src="img/le_delice_des_sens.jpg" alt="le délice des sens">
                     <div class="card__info">
-                        <h3>Le délice des sens</h3>
-                        <p>Folie-Méricourt</p>
+                        <div class="card__info-title">
+                            <h3>Le délice des sens</h3>
+                            <h4>Folie-Méricourt</h4>
+                        </div>
+                        <div class="card__info-heart">
+                            <span><i class="heart__icon far fa-heart"></i></span>
+                        </div>
                     </div>
-                    <div class="card__info-heart"><i class="far fa-heart"></i></div>
                 </a>
             </div>
 
@@ -130,12 +157,12 @@
     <!--footer-->
     <footer>
         <div class="footer">
-            <img src="img/ohmyfood.svg" alt="logo ohmyfood">
+            <img class="footer__logo" src="img/ohmyfood_wight.png" alt="logo ohmyfood">
             <ul>
-                <li><i class="fas fa-utensils"></i> Proposer un restaurant</li>
-                <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-                <li>Mentions légales</li>
-                <li>Contact</li>
+                <li><a href="#"><i class="footer__icon fas fa-utensils"></i> Proposer un restaurant</a></li>
+                <li><a href="#"><i class="footer__icon fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto:benoit.saby@hotmail.fr">Contact</a></li>
             </ul>
         </div>
     </footer>

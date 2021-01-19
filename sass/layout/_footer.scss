@@ -1,0 +1,28 @@
+.footer {
+    font-size: 0.9em;
+    padding: 20px;
+    background-color: #353535;
+    height: 200px;
+    color: #ffffff;
+    .footer__logo {
+        width: 100px;
+        height: 18px;
+        color: #ffffff;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .footer__icon {
+        font-size: 0.9em;
+        color: #ffffff;
+        margin-right: 10px;
+    }
+    .footer__icon.fas.fa-utensils {
+        margin-right: 12px;
+    }
+    li {
+        margin-top: 10px;
+    }
+    li:hover {
+        color: #99E2D0;
+    }
+}
