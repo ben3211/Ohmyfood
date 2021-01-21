@@ -4,13 +4,18 @@
     background-color: #353535;
     height: 200px;
     color: #ffffff;
-    .footer__logo {
+    h2 {
+        font-family: 'Shrikhand', cursive;
+        font-weight: lighter;
+        font-size: 1.2em;
+    }
+   /** .footer__logo {
         width: 100px;
         height: 18px;
         color: #ffffff;
         margin-top: 10px;
         margin-bottom: 10px;
-    }
+    }**/
     .footer__icon {
         font-size: 0.9em;
         color: #ffffff;
@@ -21,6 +26,7 @@
     }
     li {
         margin-top: 10px;
+        @include delay;
     }
     li:hover {
         color: #99E2D0;
