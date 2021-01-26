@@ -15,22 +15,15 @@
         font-size: 1.1em;
     }
     .menu__button {
-        border-radius: 30px;
-        color:white;
-        font-size: 0.9em;
-        font-weight: bold;
-        letter-spacing: 0.01em;
-        margin:auto;
+        @include btn;
         margin-top: 40px;
         width: 220px;
         padding: 16px 0;
-        border:none;
-        cursor: pointer;
-        box-shadow: 2px 5px 8px 2px #ccc;
-        background: linear-gradient(173deg, rgba(232,114,218,1) 0%, rgba(192,101,219,1) 51%, rgba(168,93,219,1) 100%);    
+        background: linear-gradient(173deg, rgba(255,122,239,1) 0%, rgba(208,101,219,1) 51%, rgba(168,93,219,1) 100%); 
         @include delay();
         &:hover {
-            transform: scale(1.1);
+            background: linear-gradient(173deg, rgba(255,122,239,1) 10%, rgba(208,101,219,1) 71%, rgba(168,93,219,1) 120%); 
+            box-shadow: 2px 7px 10px 5px #ccc;
         }    
     }
 }

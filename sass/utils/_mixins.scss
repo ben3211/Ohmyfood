@@ -27,7 +27,7 @@
     background: linear-gradient(176deg, rgba(238,115,218,1) 0%, rgba(187,99,219,1) 46%, rgba(176,95,220,1) 77%, rgba(173,94,220,1) 100%);
     @include delay();
     &:hover {
-        transform: scale(1.1);
+        box-shadow: 2px 7px 10px 5px #ccc;
     }
 }
 
@@ -37,3 +37,5 @@
         border: 1px solid $color-primary;
     }
 }
+
+/* heart */

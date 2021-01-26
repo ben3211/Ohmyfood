@@ -24,11 +24,13 @@
     .footer__icon.fas.fa-utensils {
         margin-right: 12px;
     }
-    li {
+    li, address {
+        font-style: normal;
         margin-top: 10px;
         @include delay;
+        &:hover {
+            color: #99E2D0;
+        }
     }
-    li:hover {
-        color: #99E2D0;
-    }
+
 }

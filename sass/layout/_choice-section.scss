@@ -47,7 +47,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 345px;
+    position: relative;
+    overflow:hidden;
+    min-width: 330px;
+    max-width: 345px;
     height: 70px;
     margin-top: 15px;
     border-radius: 20px;
@@ -64,9 +67,11 @@
         }
     }
     .choice__card__price {
+        position: absolute;
+        left:85%;
         margin-top: 30px;
-        margin-right: 20px;
-        font-weight: 500;  
+        font-weight: 500;
+        margin-right: 20px;  
     }
 }
 
@@ -74,4 +79,8 @@
 .command__button {
     @include flex-center;
     @include btn;
+    &:hover {
+        background: linear-gradient(176deg, rgba(238,115,218,1) 10%, rgba(187,99,219,1) 66%, rgba(176,95,220,1) 107%, rgba(173,94,220,1) 200%);
+    @include delay();
+    }
 }
