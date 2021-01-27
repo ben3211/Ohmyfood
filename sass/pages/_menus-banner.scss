@@ -8,6 +8,10 @@
     }
 }
 
+.laNoteEnchante {
+    height: 250px;
+}
+
 /*-------------------------medias-queries-------------------------*/
 
 @media all and (min-width: 500px) {
@@ -24,17 +28,22 @@
             object-position:bottom;
         }
     }
+    .laNoteEnchante {
+        height: 400px;
+        .banner__image {
+            object-position:50% 60%;
+        }
+    }
 }
 
 @media all and (min-width: 1000px) {
-    .banner {
-        width: 1000px;
-        margin: auto;
-    }
-
     .container {
         position: relative;
         background-color:#353535;
-        z-index: -9999;
+        z-index: 0;
+        .banner {
+            width: 1000px;
+            margin: auto; 
+        }
     }
 }

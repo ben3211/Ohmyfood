@@ -34,7 +34,7 @@ li {
 }
 
 /*components*/
-.main {
+.loader {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,7 +142,7 @@ li {
     transform: rotate(360deg) scale(0.9);
   }
 }
-.child1, .child2, .child3 {
+.child1, .child2, .child3, .child4 {
   opacity: 0;
   animation: appear 1s ease-in forwards;
 }
@@ -157,6 +157,10 @@ li {
 
 .child3 {
   animation: appear 1s ease-in-out forwards 0.7s;
+}
+
+.child4 {
+  animation: appear 1s ease-in-out forwards 0.9s;
 }
 
 @keyframes appear {
@@ -498,6 +502,7 @@ li {
 .header__menu img {
   height: 25px;
   width: 163px;
+  margin-right: 20px;
 }
 .header__menu .return {
   float: left;
@@ -519,6 +524,10 @@ li {
   z-index: -1;
 }
 
+.laNoteEnchante {
+  height: 250px;
+}
+
 /*-------------------------medias-queries-------------------------*/
 @media all and (min-width: 500px) {
   .banner {
@@ -533,17 +542,23 @@ li {
     object-fit: cover;
     object-position: bottom;
   }
+
+  .laNoteEnchante {
+    height: 400px;
+  }
+  .laNoteEnchante .banner__image {
+    object-position: 50% 60%;
+  }
 }
 @media all and (min-width: 1000px) {
-  .banner {
-    width: 1000px;
-    margin: auto;
-  }
-
   .container {
     position: relative;
     background-color: #353535;
-    z-index: -9999;
+    z-index: 0;
+  }
+  .container .banner {
+    width: 1000px;
+    margin: auto;
   }
 }
 .loc {
@@ -617,6 +632,7 @@ li {
   border-top-right-radius: 40px;
   margin-top: -50px;
   padding: 10px 15px;
+  z-index: 2;
 }
 .menus .menus__title {
   display: flex;
@@ -663,7 +679,7 @@ li {
   position: relative;
   overflow: hidden;
   min-width: 330px;
-  max-width: 345px;
+  max-width: 350px;
   height: 70px;
   margin-top: 15px;
   border-radius: 20px;
@@ -681,7 +697,7 @@ li {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 240px;
+  width: 270px;
   font-size: 0.9em;
   font-weight: 300;
 }

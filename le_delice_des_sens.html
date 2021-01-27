@@ -1,23 +1,236 @@
 <!DOCTYPE html>
 <html lang="fr">
+
+<!--head-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu - Le délice des sens</title>
+    <title>Le délice des sens</title>
     <link rel="icon" href="img/oh.png" type="image/png" sizes="32x32">
+
 
      <!--Style-->
     <link rel="stylesheet" href="css/style.css">
 
-    <!--font Devonshire regular / Croissant One / Dancing Script / Kaushan Script / Noto Serif / -->
+    <!--Roboto / Shrikhand-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script:wght@500&family=Devonshire&family=Kaushan+Script&family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">   
 
     <!--fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-
 </head>
+<!--head-->
+
+
+<!--body-->
 <body>
-    
+
+    <!--header-->
+    <header>
+        <div class="header__menu">
+            <a href="index.html"><i class="return fas fa-arrow-left"></i></a>
+            <img src="img/ohmyfood.svg" alt="logo ohmyfood">
+        </div>
+    </header>
+    <!--header-->
+
+    <!--main-->
+    <div class="container">
+
+        <!--banner-->
+        <div class="banner">
+            <img class="banner__image" src="img/le_delice_des_sens.jpg" alt="menu à la française">
+        </div>
+        <!--banner-->
+
+        <!--menu-section-->
+        <div class="menus">
+            <div class="menus__title">
+                <h1>Le délice des sens</h1>
+                <span><i class="heart__icon far fa-heart"></i></span>
+            </div>
+
+            <!--starter-->
+            <div class="choice">
+                
+                <div class="choice__tittle">
+                    <h3>Entrées</h3>
+                    <div class="border__bottom"></div>
+                </div>
+
+                <div class="card__choice">
+                    <a href="#">
+                        <div class="choice__menus child1">
+                            <div class="choice__card__info">
+                                <h4>Tartare de thon</h4>
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <div class="choice__card__price">
+                                <span>25€</span>
+                            </div>
+                            <div class="check"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="choice__menus child2">
+                            <div class="choice__card__info">
+                                <h4>Bouchée de homard croustillant</h4>
+                                <p>Et sa farandole de petits légumes</p>
+                            </div>
+                            <div class="choice__card__price">
+                                <span>35€</span>
+                            </div>
+                            <div class="check"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="choice__menus child3">
+                            <div class="choice__card__info">
+                                <h4>Velouté de cèpes</h4>
+                                <p>Aux truffes</p>
+                            </div>
+                            <div class="choice__card__price">
+                                <span>20€</span>
+                            </div>
+                            <div class="check"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--starter-->
+
+            <!--main-course-->
+            <div class="choice">
+                
+                <div class="choice__tittle">
+                    <h3>Plats</h3>
+                    <div class="border__bottom"></div>
+                </div>
+
+                <div class="card__choice">
+                    <a href="#">
+                        <div class="choice__menus child1">
+                            <div class="choice__card__info">
+                                <h4>Poulet rôti aux herbes de Provence</h4>
+                                <p>Et sa crème de truffe</p>
+                            </div>
+                            <div class="choice__card__price">
+                                <span>40€</span>
+                            </div>
+                            <div class="check"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="choice__menus child2">
+                            <div class="choice__card__info">
+                                <h4>Langouste rôtie </h4>
+                                <p>Et ses légumes de saison</p>
+                            </div>
+                            <div class="choice__card__price">
+                                <span>35€</span>
+                            </div>
+                            <div class="check"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="choice__menus child3">
+                            <div class="choice__card__info">
+                                <h4>Côte de boeuf Angus</h4>
+                                <p>Et sa purée de panais</p>
+                            </div>
+                            <div class="choice__card__price">
+                                <span>44€</span>
+                            </div>
+                            <div class="check"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--main-course-->
+
+            <!--dessert-->
+            <div class="choice">
+                
+                <div class="choice__tittle">
+                    <h3>Desserts</h3>
+                    <div class="border__bottom"></div>
+                </div>
+
+                <div class="card__choice">
+                    <a href="#">
+                        <div class="choice__menus child1">
+                            <div class="choice__card__info">
+                                <h4>Farandole de desserts</h4>
+                                <p>Du chef</p>
+                            </div>
+                            <div class="choice__card__price">
+                                <span>18€</span>
+                            </div>
+                            <div class="check"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="choice__menus child2">
+                            <div class="choice__card__info">
+                                <h4>Crème brulée</h4>
+                                <p>Revisitée</p>
+                            </div>
+                            <div class="choice__card__price">
+                                <span>22€</span>
+                            </div>
+                            <div class="check"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="choice__menus child3">
+                            <div class="choice__card__info">
+                                <h4>Tiramisu</h4>
+                                <p>À la noisette</p>
+                            </div>
+                            <div class="choice__card__price">
+                                <span>23€</span>
+                            </div>
+                            <div class="check"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--dessert-->
+
+            <!--btn-->
+            <div class="button">
+                <button class="command__button" type="button">Commander</button>
+            </div>
+            <!--btn-->
+
+        </div>
+        <!--menu-section-->
+
+
+    </div>
+    <!--main-->
+
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            <a href="#"><h2>ohmyfood</h2></a>
+            <ul>
+                <li><a href="#"><i class="footer__icon fas fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href="#"><i class="footer__icon fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><address><a href="mailto:contact@ohmyfood.com">Contact</a></address></li>
+            </ul>
+        </div>
+    </footer>
+    <!--footer-->
+
 </body>
+<!--body-->
+
 </html> 
