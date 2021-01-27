@@ -4,6 +4,7 @@
     h2 {
         padding-left: 20px;
         padding-top: 40px;
+        width: 100%;
     }
 }
 
@@ -21,7 +22,7 @@
     &:hover {
         box-shadow: 0 0 5px rgba(0,0,0,0.7);
         .heart-icon2{
-            animation: fill-up 1s ease-in forwards; 
+            animation: fill-up 0.5s ease-in forwards; 
         }
     }
     .card__image {
@@ -70,7 +71,7 @@
                 font-size:1.1em;
                 opacity:0;
                 &:hover {
-                    animation: fill-up 1s ease-in forwards; 
+                    animation: fill-up 0.5s ease-in forwards; 
                 }
             }
         }
@@ -85,5 +86,36 @@
     100% {
         opacity: 1;
         color:#d065db;
+    }
+}
+
+/*-------------------------medias-queries-------------------------*/
+
+@media all and (min-width: 400px) {
+    .restaurant h2 {
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+    }
+    
+    .restaurant {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media all and (min-width: 1080px) and (max-width:1439px) {
+    .restaurant {
+        padding-right: 200px ;
+        padding-left: 200px;
+    }
+}
+
+@media all and (min-width: 1440px) {
+    .restaurant {
+        padding:none;
     }
 }

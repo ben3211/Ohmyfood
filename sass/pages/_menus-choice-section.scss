@@ -44,6 +44,10 @@
 }
 
 .choice__menus {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +65,12 @@
         h4 {
             line-height: 1.8em;
         }
-        p {
+        p {           
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 240px;
             font-size: 0.9em;
             font-weight: 300;
         }
@@ -82,5 +91,50 @@
     &:hover {
         background: linear-gradient(176deg, rgba(238,115,218,1) 10%, rgba(187,99,219,1) 66%, rgba(176,95,220,1) 107%, rgba(173,94,220,1) 200%);
     @include delay();
+    }
+}
+
+
+/*-------------------------medias-queries-------------------------*/
+
+@media all and (min-width: 376px) {
+    .menus {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .menus__title {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .menus__title span{
+            margin-left: 30px;
+        }
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 690px) {
+    .choice {
+        margin-left: 20px;
+    }
+}
+
+@media all and (min-width: 730px) {
+
+    .menus {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .menus__title {
+            justify-content: center;
+        }
     }
 }

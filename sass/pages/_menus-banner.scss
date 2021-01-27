@@ -1,0 +1,40 @@
+.banner {
+    .banner__image {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+}
+
+/*-------------------------medias-queries-------------------------*/
+
+@media all and (min-width: 500px) {
+    .banner {
+        height: 400px;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .banner {
+        height: 500px;
+        .banner__image {
+            object-fit:cover;
+            object-position:bottom;
+        }
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .banner {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .container {
+        position: relative;
+        background-color:#353535;
+        z-index: -9999;
+    }
+}

@@ -5,21 +5,25 @@
 /*base*/
 @import "./base/general";
 
+/*components*/
+@import "./components/animation-index-loader";
+@import "./components/animation-choice-section";
+@import "./components/animation-price";
+
 /*layout*/
 @import "./layout/header";
-@import "./layout/loc";
-@import "./layout/menu";
-@import "./layout/running";
-@import "./layout/card";
-@import "./layout/header-menu";
-@import "./layout/banner";
-@import "./layout/choice-section";
 @import "./layout/footer";
 
 /*pages*/
-@import "./pages/index-loader";
-@import "./pages/animation-choice-section";
-@import "./pages/animation-price";
+@import "./pages/home-running";
+@import "./pages/home-card";
+@import "./pages/menus-header";
+@import "./pages/menus-banner";
+@import "./pages/home-loc";
+@import "./pages/home-menu";
+@import "./pages/menus-choice-section";
+
+
 
 
 

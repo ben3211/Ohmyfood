@@ -26,11 +26,32 @@
     }
     li, address {
         font-style: normal;
-        margin-top: 10px;
         @include delay;
         &:hover {
             color: #99E2D0;
         }
     }
+}
 
+/*-------------------------medias-queries-------------------------*/
+
+@media all and (min-width: 400px) {
+    .footer {
+        h2, ul {
+            display: flex;
+            justify-content:center;
+        }
+        ul {
+            margin-top: 50px;
+        }
+    }
+}
+    
+@media all and (min-width: 500px) {
+    .footer {
+        h2, ul {
+            display: flex;
+            justify-content:space-around;
+        }
+    }
 }
