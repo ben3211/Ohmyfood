@@ -1,25 +1,21 @@
 .footer {
-    font-size: 0.9em;
     padding: 20px;
-    background-color: #353535;
     height: 200px;
+
+    font-size: 0.9em;
+    background-color: #353535;
     color: #ffffff;
     h2 {
         font-family: 'Shrikhand', cursive;
+
         font-weight: lighter;
         font-size: 1.2em;
     }
-   /** .footer__logo {
-        width: 100px;
-        height: 18px;
-        color: #ffffff;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }**/
     .footer__icon {
+        margin-right: 10px;
+        
         font-size: 0.9em;
         color: #ffffff;
-        margin-right: 10px;
     }
     .footer__icon.fas.fa-utensils {
         margin-right: 12px;

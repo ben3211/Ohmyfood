@@ -1,10 +1,11 @@
 /**menu-section**/
 .menus {
+    margin-top: -50px;
+    padding: 10px 15px;
+
     background-color:$background-color;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    margin-top: -50px;
-    padding: 10px 15px;
     z-index: 2;
     .menus__title {
         display:flex;
@@ -15,9 +16,9 @@
         }
     }
     .heart__icon {
-        font-size: 1.5em;
         margin-top: 10px;
         margin-right: 30px;
+        font-size: 1.5em;
     }
 }
 
@@ -40,24 +41,21 @@
         height: 5px;
         width: 50px;
         border-bottom: 3px solid $color-tertiary;
-        
     }
 }
 
 .choice__menus {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     overflow:hidden;
+
     min-width: 330px;
     max-width: 350px;
     height: 70px;
     margin-top: 15px;
+
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 2px 10px 1px #ccc;
@@ -67,11 +65,12 @@
             line-height: 1.8em;
         }
         p {           
-            display: inline-block;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+
             width: 270px;
+
             font-size: 0.9em;
             font-weight: 300;
         }
@@ -79,9 +78,11 @@
     .choice__card__price {
         position: absolute;
         left:85%;
+
         margin-top: 30px;
-        font-weight: 500;
         margin-right: 20px;  
+        
+        font-weight: 500;
     }
 }
 
@@ -100,9 +101,7 @@
 
 @media all and (min-width: 376px) {
     .menus {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         flex-direction: row;
         flex-wrap: wrap;
         .menus__title {

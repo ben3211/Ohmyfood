@@ -12,22 +12,24 @@
 
 /* button */
 @mixin btn {
-    font-size: 1em;
-    border-radius: 30px;
-    color:white;
-    letter-spacing: 0.01em;
+    width: 200px;
+    padding: 15px 0;
     margin:auto;
     margin-top: 50px;
     margin-bottom: 80px;
-    width: 200px;
-    padding: 15px 0;
+
+    font-size: 1em;
+    border-radius: 30px;
+    letter-spacing: 0.01em;
     border:none;
     cursor: pointer;
+    
+    color:white;
     box-shadow: 2px 5px 8px 2px #ccc;
     background: linear-gradient(176deg, rgba(238,115,218,1) 0%, rgba(187,99,219,1) 46%, rgba(176,95,220,1) 77%, rgba(173,94,220,1) 100%);
     @include delay();
     &:hover {
-        box-shadow: 2px 7px 10px 5px #ccc;
+        box-shadow: 2px 4px 10px 5px #ccc;
     }
 }
 

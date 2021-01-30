@@ -1,5 +1,6 @@
 .child1, .child2, .child3, .child4  {
     opacity:0;
+    
     animation: appear 1s ease-in forwards;
 }
   
@@ -17,7 +18,7 @@ animation: appear 1s ease-in-out forwards 0.7s;
 
 .child4 {
     animation: appear 1s ease-in-out forwards 0.9s;
-    }
+}
 
 @keyframes appear {
     0% {

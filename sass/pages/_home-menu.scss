@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     height: 298px;
-    background-color: #f6f6f6;
     padding: 0 35px;
+    background-color: #f6f6f6;
     .menu__title {
         text-align: center;
         padding-top: 42px;
@@ -19,6 +19,7 @@
         margin-top: 40px;
         width: 220px;
         padding: 16px 0;
+        
         background: linear-gradient(173deg, rgba(255,122,239,1) 0%, rgba(208,101,219,1) 51%, rgba(168,93,219,1) 100%); 
         @include delay();
         &:hover {

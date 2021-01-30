@@ -36,11 +36,12 @@ li {
 /*components*/
 .loader {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   position: absolute;
   height: 100vh;
   width: 100%;
+  right: 0;
   background-color: #f6f6f6;
   animation: duration 10s linear forwards;
   z-index: 1;
@@ -264,13 +265,6 @@ li {
   background-color: #353535;
   height: 200px;
   color: #ffffff;
-  /** .footer__logo {
-       width: 100px;
-       height: 18px;
-       color: #ffffff;
-       margin-top: 10px;
-       margin-bottom: 10px;
-   }**/
 }
 .footer h2 {
   font-family: "Shrikhand", cursive;
@@ -473,8 +467,8 @@ li {
 
   .restaurant {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -618,7 +612,7 @@ li {
   transition: all 0.3s ease-in-out;
 }
 .menu .menu__button:hover {
-  box-shadow: 2px 7px 10px 5px #ccc;
+  box-shadow: 2px 4px 10px 5px #ccc;
 }
 .menu .menu__button:hover {
   background: linear-gradient(173deg, #ff7aef 10%, #d065db 71%, #a85ddb 120%);
@@ -669,10 +663,6 @@ li {
 }
 
 .choice__menus {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -693,7 +683,6 @@ li {
   line-height: 1.8em;
 }
 .choice__menus .choice__card__info p {
-  display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -730,7 +719,7 @@ li {
   transition: all 0.3s ease-in-out;
 }
 .command__button:hover {
-  box-shadow: 2px 7px 10px 5px #ccc;
+  box-shadow: 2px 4px 10px 5px #ccc;
 }
 .command__button:hover {
   background: linear-gradient(176deg, #ee73da 10%, #bb63db 66%, #b05fdc 107%, #ad5edc 200%);
@@ -741,8 +730,8 @@ li {
 @media all and (min-width: 376px) {
   .menus {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
   }
