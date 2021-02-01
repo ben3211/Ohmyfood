@@ -63,13 +63,12 @@ li {
   }
 }
 .spinner {
+  position: relative;
   width: 100px;
   height: 100px;
+  margin: 50px;
   background: #eee;
   border-radius: 50%;
-  position: relative;
-  margin: 50px;
-  display: inline-block;
   animation: spinner-color 2s linear infinite;
 }
 .spinner span {
@@ -84,7 +83,6 @@ li {
 
 .spinner::after, .spinner::before {
   content: "";
-  display: block;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -145,7 +143,6 @@ li {
 }
 .child1, .child2, .child3, .child4 {
   opacity: 0;
-  animation: appear 1s ease-in forwards;
 }
 
 .child1 {
@@ -169,12 +166,6 @@ li {
     opacity: 0;
     transform: translateY(100%);
   }
-  33% {
-    opacity: 0.2;
-  }
-  66% {
-    opacity: 0.4;
-  }
   100% {
     opacity: 1;
     transform: translateY(0%);
@@ -184,6 +175,32 @@ li {
   opacity: 0;
 }
 
+.choice__menus::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 100%;
+  background: #99E2D0;
+  animation: move-back 0.5s ease-in-out forwards;
+}
+.choice__menus span {
+  display: inline-block;
+  animation: price-move-back 0.5s ease-in-out forwards;
+}
+.choice__menus .check {
+  position: absolute;
+  left: 118%;
+  color: #ffffff;
+  font-size: 1.5em;
+  opacity: 1;
+  z-index: 5;
+  animation: check-move-back 0.5s ease-in-out forwards;
+}
+.choice__menus p {
+  animation: p-move-back 0.5s ease-in-out forwards;
+}
+
 .choice__menus:hover::before {
   content: "";
   position: absolute;
@@ -191,11 +208,11 @@ li {
   height: 100px;
   left: 100%;
   background: #99E2D0;
-  animation: move-left 0.8s ease-in-out forwards;
+  animation: move-left 0.6s ease-in-out forwards;
 }
 .choice__menus:hover span {
   display: inline-block;
-  animation: price-move-left 0.8s ease-in-out forwards;
+  animation: price-move-left 0.6s ease-in-out forwards;
 }
 .choice__menus:hover .check {
   position: absolute;
@@ -204,10 +221,10 @@ li {
   font-size: 1.5em;
   opacity: 1;
   z-index: 5;
-  animation: check-move-left 0.8s ease-in-out forwards;
+  animation: check-move-left 0.6s ease-in-out forwards;
 }
 .choice__menus:hover p {
-  animation: p-move-left 0.8s ease-in-out forwards;
+  animation: p-move-left 0.6s ease-in-out forwards;
 }
 
 @keyframes move-left {
@@ -228,10 +245,7 @@ li {
 }
 @keyframes check-move-left {
   0% {
-    transform: translateX(0%), rotate(360deg);
-  }
-  50% {
-    transform: translateX(0%), rotate(0deg);
+    transform: translateX(0%) rotate(0deg);
   }
   100% {
     transform: translateX(-450%) rotate(720deg);
@@ -242,6 +256,39 @@ li {
     width: 240px;
   }
   100% {
+    width: 210px;
+  }
+}
+/** move-back **/
+@keyframes move-back {
+  100% {
+    transform: translateX(0%);
+  }
+  0% {
+    transform: translateX(-70%);
+  }
+}
+@keyframes price-move-back {
+  100% {
+    transform: translateX(0%);
+  }
+  0% {
+    transform: translateX(-200%);
+  }
+}
+@keyframes check-move-back {
+  100% {
+    transform: translateX(0%) rotate(0deg);
+  }
+  0% {
+    transform: translateX(-450%) rotate(720deg);
+  }
+}
+@keyframes p-move-back {
+  100% {
+    width: 270px;
+  }
+  0% {
     width: 210px;
   }
 }
@@ -315,7 +362,7 @@ li {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  min-width: 300px;
+  min-width: 270px;
   max-width: 325px;
   margin-top: 25px;
   padding: 25px 15px;
@@ -379,8 +426,8 @@ li {
 
 .card {
   position: relative;
-  min-width: 320px;
-  max-width: 340px;
+  min-width: 280px;
+  max-width: 335px;
   height: 250px;
   margin: 20px;
   background-color: #ffffff;
@@ -388,6 +435,9 @@ li {
   border-radius: 20px;
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
+}
+.card .heart-icon2 {
+  animation: fill-out 0.5s ease-in forwards;
 }
 .card:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
@@ -443,9 +493,6 @@ li {
   font-size: 1.1em;
   opacity: 0;
 }
-.card .card__info .card__info-heart .heart-icon2:hover {
-  animation: fill-up 0.5s ease-in forwards;
-}
 
 @keyframes fill-up {
   0% {
@@ -453,6 +500,16 @@ li {
     opacity: 0;
   }
   100% {
+    opacity: 1;
+    color: #d065db;
+  }
+}
+@keyframes fill-out {
+  100% {
+    color: #ffffff;
+    opacity: 0;
+  }
+  0% {
     opacity: 1;
     color: #d065db;
   }
@@ -472,16 +529,29 @@ li {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .restaurant .card {
+    width: 330px;
+  }
 }
-@media all and (min-width: 1080px) and (max-width: 1439px) {
+@media all and (min-width: 1080px) {
   .restaurant {
-    padding-right: 200px;
-    padding-left: 200px;
+    padding-right: 150px;
+    padding-left: 150px;
+  }
+}
+@media all and (min-width: 1405px) and (max-width: 1439px) {
+  .restaurant {
+    padding-right: 300px;
+    padding-left: 300px;
   }
 }
 @media all and (min-width: 1440px) {
   .restaurant {
-    padding: none;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .restaurant .card {
+    width: 320px;
   }
 }
 .header__menu {
@@ -648,9 +718,10 @@ li {
   margin-bottom: 20px;
   margin-top: 40px;
 }
-.choice .choice__tittle h3 {
+.choice .choice__tittle h2 {
   text-transform: uppercase;
   font-weight: 300;
+  font-size: 1em;
 }
 .choice .border__bottom:before {
   content: "";
@@ -658,7 +729,7 @@ li {
   left: 0;
   bottom: -15;
   height: 5px;
-  width: 50px;
+  width: 40px;
   border-bottom: 3px solid #99E2D0;
 }
 
@@ -668,10 +739,12 @@ li {
   align-items: center;
   position: relative;
   overflow: hidden;
-  min-width: 330px;
+  min-width: 295px;
   max-width: 350px;
   height: 70px;
   margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 20px;
   background-color: #ffffff;
   box-shadow: 0px 2px 10px 1px #ccc;
@@ -679,14 +752,14 @@ li {
 .choice__menus .choice__card__info {
   margin-left: 10px;
 }
-.choice__menus .choice__card__info h4 {
-  line-height: 1.8em;
+.choice__menus .choice__card__info h3 {
+  padding-right: 50px;
+  font-size: 1em;
+  font-weight: 500;
 }
 .choice__menus .choice__card__info p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 270px;
+  width: 300px;
+  padding-right: 50px;
   font-size: 0.9em;
   font-weight: 300;
 }
@@ -742,6 +815,22 @@ li {
   }
   .menus .menus__title span {
     margin-left: 30px;
+  }
+  .menus .choice__menus {
+    width: 350px;
+  }
+  .menus .choice__menus h3 {
+    line-height: 1.8em;
+    padding-right: 0;
+  }
+  .menus .choice__menus p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 0;
+    width: 300px;
+    font-size: 0.9em;
+    font-weight: 300;
   }
 
   .button {

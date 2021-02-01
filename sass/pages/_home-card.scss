@@ -11,8 +11,8 @@
 .card {
     position: relative;
 
-    min-width: 320px;
-    max-width: 340px;
+    min-width: 280px;
+    max-width: 335px;
     height: 250px;
     margin: 20px;
 
@@ -21,9 +21,12 @@
     border-radius: 20px;
     border-radius: 20px;
     @include delay();
+    .heart-icon2 {
+        animation: fill-out 0.5s ease-in forwards; 
+    }
     &:hover {
         box-shadow: 0 0 5px rgba(0,0,0,0.7);
-        .heart-icon2{
+        .heart-icon2 {
             animation: fill-up 0.5s ease-in forwards; 
         }
     }
@@ -33,6 +36,7 @@
 
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+
         object-fit: cover;
         object-position: 60% 60%;
     }
@@ -68,7 +72,7 @@
             margin-bottom: auto;
             margin-right: 14px;
             .heart-icon1 {
-                font-size: 1.3em;
+                font-size: 1.3em; 
             }
             .heart-icon2 {
                 position:absolute;
@@ -76,9 +80,6 @@
                 left:0.088em;
                 font-size:1.1em;
                 opacity:0;
-                &:hover {
-                    animation: fill-up 0.5s ease-in forwards; 
-                }
             }
         }
     }
@@ -90,6 +91,17 @@
         opacity: 0;
     }
     100% {
+        opacity: 1;
+        color:#d065db;
+    }
+}
+
+@keyframes fill-out {
+    100% {
+        color: #ffffff;
+        opacity: 0;
+    }
+    0% {
         opacity: 1;
         color:#d065db;
     }
@@ -108,18 +120,32 @@
         @include flex-center;
         flex-direction: row;
         flex-wrap: wrap;
+        .card {
+            width: 330px;
+        }
     }
 }
 
-@media all and (min-width: 1080px) and (max-width:1439px) {
+@media all and (min-width: 1080px) {
     .restaurant {
-        padding-right: 200px ;
-        padding-left: 200px;
+        padding-right: 150px ;
+        padding-left: 150px;
+    }
+}
+
+@media all and (min-width: 1405px) and (max-width:1439px) {
+    .restaurant {
+        padding-right: 300px;
+        padding-left: 300px;
     }
 }
 
 @media all and (min-width: 1440px) {
     .restaurant {
-        padding:none;
+        padding-right:0;
+        padding-left:0;
+        .card {
+            width: 320px;
+        }
     }
 }

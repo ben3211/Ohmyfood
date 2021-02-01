@@ -1,19 +1,17 @@
 .child1, .child2, .child3, .child4  {
     opacity:0;
-    
-    animation: appear 1s ease-in forwards;
 }
   
 .child1 {
-animation: appear 1s ease-in-out forwards 0.3s;
+    animation: appear 1s ease-in-out forwards 0.3s;
 }
   
 .child2 {
-animation: appear 1s ease-in-out forwards 0.5s;
+    animation: appear 1s ease-in-out forwards 0.5s;
 }
 
 .child3 {
-animation: appear 1s ease-in-out forwards 0.7s;
+    animation: appear 1s ease-in-out forwards 0.7s;
 }
 
 .child4 {
@@ -24,12 +22,6 @@ animation: appear 1s ease-in-out forwards 0.7s;
     0% {
         opacity:0;
         transform: translateY(100%);
-    }
-    33% {
-        opacity:0.2;
-    }
-    66% {
-        opacity:0.4;
     }
     100% {
         opacity:1;

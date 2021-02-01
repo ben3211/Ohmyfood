@@ -1,6 +1,37 @@
 .check {
   opacity:0;
 }
+
+.choice__menus {
+  &::before {
+  content:'';
+  position:absolute;
+
+  width: 100px;
+  height: 100px;
+  left:100%;
+
+  background:$color-tertiary;
+  animation: move-back 0.5s ease-in-out forwards;
+  }
+  span {
+    display: inline-block;
+    animation: price-move-back 0.5s ease-in-out forwards;
+  }
+  .check {
+    position:absolute;
+    left:118%;
+
+    color: #ffffff;
+    font-size: 1.5em;
+    opacity:1;
+    z-index:5;
+    animation: check-move-back 0.5s ease-in-out forwards; 
+  }
+  p {
+    animation: p-move-back 0.5s ease-in-out forwards;
+  }
+}
   
 .choice__menus:hover {
 &::before {
@@ -12,12 +43,12 @@
   left:100%;
 
   background:$color-tertiary;
-  animation: move-left 0.8s ease-in-out forwards;
+  animation: move-left 0.6s ease-in-out forwards;
   }
   
   span {
     display: inline-block;
-    animation: price-move-left 0.8s ease-in-out forwards;
+    animation: price-move-left 0.6s ease-in-out forwards;
   }
 
   .check {
@@ -28,11 +59,11 @@
     font-size: 1.5em;
     opacity:1;
     z-index:5;
-    animation: check-move-left 0.8s ease-in-out forwards; 
+    animation: check-move-left 0.6s ease-in-out forwards; 
   }
 
   p {
-    animation: p-move-left 0.8s ease-in-out forwards; 
+    animation: p-move-left 0.6s ease-in-out forwards; 
   }
 
 }
@@ -57,10 +88,7 @@
   
 @keyframes check-move-left {
   0% {
-    transform:translateX(0%), rotate(360deg)
-  }
-  50% {
-    transform:translateX(0%), rotate(0deg)
+    transform:translateX(0%) rotate(0deg)
   }
   100% {
     transform:translateX(-450%) rotate(720deg)
@@ -72,6 +100,44 @@
     width: 240px;
   }
   100% {
+    width: 210px;
+  }
+}
+
+/** move-back **/
+
+@keyframes move-back {
+  100% {
+    transform:translateX(0%)
+  }
+  0% {
+    transform:translateX(-70%)
+  }
+}
+
+@keyframes price-move-back {
+  100% {
+    transform:translateX(0%)
+  }
+  0% {
+    transform:translateX(-200%)  
+  }
+}
+  
+@keyframes check-move-back {
+  100% {
+    transform:translateX(0%) rotate(0deg)
+  }
+  0% {
+    transform:translateX(-450%) rotate(720deg)
+  }
+}
+
+@keyframes p-move-back {
+  100% {
+    width: 270px;
+  }
+  0% {
     width: 210px;
   }
 }
