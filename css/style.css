@@ -727,7 +727,6 @@ li {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -15;
   height: 5px;
   width: 40px;
   border-bottom: 3px solid #99E2D0;
