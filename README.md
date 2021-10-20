@@ -1,7 +1,7 @@
 # integration model 
 
 ## Reservia
-![](img/ohmyfood_githun.png)
+![](img/ohmyfood_github.png)
 
 ***
 :gb:
