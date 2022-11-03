@@ -2,7 +2,6 @@
 ![](img/ohmyfood_github.png)
 
 ***
-### 🔍 Features
 
 
 ### 🚀 Technical choices
