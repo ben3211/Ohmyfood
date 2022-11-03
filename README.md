@@ -1,6 +1,4 @@
-# integration model 
-
-## Reservia
+## Ohmyfood
 ![](img/ohmyfood_github.png)
 
 ***
