@@ -4,7 +4,7 @@
 ***
 
 
-### 🚀 Technical choices
+
 
 
 ### 🛠️ &nbsp; Installation
