@@ -9,6 +9,8 @@
 git clone https://github.com/ben3211/Ohmyfood.git
 ```
 
+![](img/ohmyfood_banner.png)
+
 ***
 :fr:  
 ### 🔍 Fonctionalités
