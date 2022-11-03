@@ -3,7 +3,6 @@
 
 ***
 
-
 ### 🛠️ &nbsp; Installation
 * Clone the following repository [GitHub](https://github.com/ben3211/Ohmyfood.git).
 ```terminal
