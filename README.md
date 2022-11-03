@@ -2,7 +2,6 @@
 ![](img/ohmyfood_github.png)
 
 ***
-:gb:
 ### 🔍 Features
 
 
