@@ -2,6 +2,7 @@
 ![](img/ohmyfood_github.png)
 
 ***
+![](img/ohmyfood_banner.png)
 
 ### 🛠️ &nbsp; Installation
 * Clone the following repository [GitHub](https://github.com/ben3211/Ohmyfood.git).
